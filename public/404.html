@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  
+  <!-- Preconnect to Google Fonts for speed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Base URL (Required for SPA routing) -->
+  <base href="/" />
+
+  <!-- Primary Meta Tags -->
+  <title>Axon | Connected School Operations</title>
+  <meta name="title" content="Axon | Connected School Operations" />
+  <meta name="description" content="Simplify and modernize your school's digital operations. Axon unifies student information, fees, academics, and communication into one enterprise platform." />
+  <meta name="keywords" content="school ERP, student information system, edtech, education software, school management system" />
+  <meta name="author" content="Axon Incorporation" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://axon.cloud/" />
+  <meta property="og:title" content="Axon | Connected School Operations" />
+  <meta property="og:description" content="Unify your educational institution with Axon's modern ERP platform." />
+  <meta property="og:image" content="https://axon.cloud/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://axon.cloud/" />
+  <meta property="twitter:title" content="Axon | Connected School Operations" />
+  <meta property="twitter:description" content="Unify your educational institution with Axon's modern ERP platform." />
+  <meta property="twitter:image" content="https://axon.cloud/og-image.jpg" />
+
+  <!-- Device Specific Icons & PWA Manifest (UPDATED TO MATCH FOLDER STRUCTURE) -->
+  <link rel="icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="/favicon/favicon.ico" color="#0F172A" />
+  <meta name="msapplication-TileColor" content="#0F172A" />
+  <meta name="theme-color" content="#0F172A" />
+
+  <!-- Strict CSP: Tailored for Axon (Allows Stripe for fees, YouTube for product tours) -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self'; 
+    script-src 'self' 'unsafe-inline' https://js.stripe.com; 
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+    font-src 'self' https://fonts.gstatic.com; 
+    img-src 'self' data: https://*; 
+    connect-src 'self' https://api.axon.cloud;
+    frame-src 'self' https://js.stripe.com https://www.youtube.com;
+  ">
+
+  <!-- JSON-LD Structured Data for AEO/GEO Indexing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Axon",
+    "url": "https://axon.cloud",
+    "logo": "https://axon.cloud/favicon/favicon.ico",
+    "sameAs": [
+        "https://twitter.com/axon_edu",
+        "https://linkedin.com/company/axon-education"
+    ],
+    "knowsAbout": [
+        "School ERP",
+        "Student Information Systems",
+        "EdTech",
+        "School Operations Management"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Fallback for users with JavaScript disabled -->
+  <noscript>You need to enable JavaScript to run the Axon platform.</noscript>
+  
+  <!-- React Mount Point -->
+  <div id="root"></div>
+
+  <!-- Rsbuild automatically injects the JS script tags here during build -->
+</body>
+</html>

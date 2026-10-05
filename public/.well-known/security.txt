@@ -1,0 +1,4 @@
+Contact: mailto:security@axon.com
+Contact: https://axon.com/trust/vulnerability-disclosure
+Encryption: https://axon.com/pgp.txt
+Preferred-Languages: en
